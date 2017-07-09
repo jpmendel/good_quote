@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Good Quote",
+  "version": "1.0",
+  "description": "Uses the text in a web page to generate a quote.",
+
+  "browser_action": {
+    "default_icon": "res/icon128.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "64": "res/icon64.png"
+  },
+  "permissions": [
+    "tabs",
+    "<all_urls>"
+  ]
+}
