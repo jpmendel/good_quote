@@ -35,7 +35,7 @@ function createQuote(source) {
   var wordList = plainText.split(" ");
   var quote = "";
   var numWordsInQuote = 12 + (6 * Math.random());
-  var wordsUsed = 0
+  var wordsUsed = 0;
   while (wordsUsed < numWordsInQuote) {
     var randomIndex = Math.floor(wordList.length * Math.random());
     var randomWord = wordList[randomIndex] + " ";
