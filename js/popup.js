@@ -2,7 +2,7 @@
 // By Jacob Mendelowitz
 
 var quoteListener = function(request, sender, sendResponse) {
-  if (request.action == "getQuote") {
+  if (request.action === "getQuote") {
     document.getElementById("quote").innerHTML = "\"" + request.text + "\"";
     document.getElementById("sitename").innerHTML = "- " + request.url;
   }

@@ -23,7 +23,7 @@ function formatQuoteWord(string) {
       break;
     }
   }
-  if ((numUpperCase == 1) && (isUpperCase(quoteWord[0]))) {
+  if ((numUpperCase === 1) && (isUpperCase(quoteWord[0]))) {
     return quoteWord[0].toLowerCase() + quoteWord.substring(1, quoteWord.length);
   } else {
     return quoteWord;
@@ -40,7 +40,7 @@ function createQuote(source) {
     var randomIndex = Math.floor(wordList.length * Math.random());
     var randomWord = wordList[randomIndex] + " ";
     var quoteWord = formatQuoteWord(randomWord);
-    if (quoteWord == "") {
+    if (quoteWord === "") {
       continue;
     }
     quote += quoteWord + " ";
